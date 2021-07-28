@@ -50,7 +50,7 @@ signature = pkcs1_15.new(privateKey).sign(msgHash)
 # NOTE: provider would share public key verifying party
 # NOTE: provider saves signature of data with the data
 
-publicKey = RSA.import_key(open('./key/test-private.pem').read())
+publicKey = RSA.import_key(open('./key/test-public.pem').read())
 
 msgTampered = b'test bad actor data'   # sample illegitimate data
 
